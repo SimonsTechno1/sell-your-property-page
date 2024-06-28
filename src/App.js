@@ -3,6 +3,8 @@ import './App.css';
 import logo from './logo.svg';
 import searchIcon from './search-icon.svg';
 import banner from './banner.webp';
+import appStoreIcon from './app-store-icon.svg'; // Add appropriate app store icons
+import googlePlayIcon from './google-play-icon.svg';
 
 function App() {
   return (
@@ -30,13 +32,13 @@ function App() {
         <section className="hero">
           <img src={banner} alt="Neighborhood" />
           <div className="hero-text">
-            <h1>INTERESTED IN SELLING</h1>
-            <h1>YOUR PROPERTY?</h1>
+            <h1 style={{ color: '#57c1e8' }}>INTERESTED IN SELLING</h1>
+            <h1 style={{ color: '#76bc21' }}>YOUR PROPERTY?</h1>
           </div>
         </section>
         <div className="hero-subtext">
           <p>Take a moment to complete the form and an Auction.com</p>
-          <p>representative will contact you to discuss your property.</p>
+          <p>representative will reach out to assist you further.</p>
         </div>
         <section className="form-section">
           <form className="property-form">
@@ -83,6 +85,7 @@ function App() {
             <p className="disclaimer">*By providing your contact information above, you acknowledge and confirm that Auction.com may contact you regarding your inquiry.</p>
           </form>
         </section>
+
         <section className="statsSection">
           <h3 className="title">We’re The Nation’s Leading Online Investment Property Marketplace</h3>
           <div className="statsWrapper statsWrapperDesktop">
@@ -100,23 +103,30 @@ function App() {
             </div>
           </div>
         </section>
+        
       </main>
       <footer>
         <div className="footer-top">
+          <div className="footer-logo">
+            <img src={logo} alt="Logo" />
+          </div>
           <div className="footer-links">
             <a href="#about">About Us</a>
             <a href="#careers">Careers</a>
             <a href="#contact">Contact Us</a>
           </div>
-          <div className="social-media">
+          <div className="footer-social-media">
             <a href="#linkedin"><i className="fab fa-linkedin"></i></a>
             <a href="#youtube"><i className="fab fa-youtube"></i></a>
+            <a href="#app-store"><img src={appStoreIcon} alt="App Store" /></a>
+            <a href="#google-play"><img src={googlePlayIcon} alt="Google Play" /></a>
           </div>
         </div>
         <div className="footer-bottom">
           <div className="footer-info">
             <a href="#privacy">Privacy Statement</a>
             <a href="#cookies">Cookie Preferences</a>
+            <a href="#privacy-choices">Your Privacy Choices</a>
             <a href="#terms">Terms of Use</a>
             <a href="#participation">Participation Terms</a>
             <a href="#disclosures">Licensing & Disclosures</a>
